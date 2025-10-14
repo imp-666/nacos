@@ -25,6 +25,5 @@ jobs:
 
       - name: Merge upstream changes
         run: |
-          git checkout develop  # 或 master，根据你的默认分支
-          git merge upstream/main --allow-unrelated-histories
-          git push origin main
+          git checkout develop  # 根据你的默认分支
+          git merge upstream/develop --allow-unrelated-histories
